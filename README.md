@@ -2,9 +2,9 @@
 Intégrer la home learn en HMTL et CSS à partir d'une maquette PSD
 
 # Développeur
-Prénom Nom : ________ ________
+Prénom Nom : Rémy Barthez
 
-Extimation de temps : ____ h
+Extimation de temps : XX h
 
 # Infos
 

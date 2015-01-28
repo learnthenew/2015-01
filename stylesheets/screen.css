@@ -1,0 +1,678 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../font/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../font/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../font/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: "Georgia Bold Italic";
+  src: url("../font/Georgia Bold Italic.ttf");
+}
+/* line 24, ../sass/screen.scss */
+.clear {
+  clear: both;
+}
+
+/* line 28, ../sass/screen.scss */
+body {
+  background-color: #f3f5f3;
+}
+
+/* line 32, ../sass/screen.scss */
+header {
+  background-color: #fff;
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+}
+
+/* line 40, ../sass/screen.scss */
+.content_head {
+  width: 1220px;
+  height: 60px;
+  margin: auto;
+}
+
+/* line 46, ../sass/screen.scss */
+#logo {
+  display: inline-block;
+  background-image: url(../images/logo.png);
+  background-size: 120px 120px;
+  height: 120px;
+  width: 120px;
+  float: left;
+  margin-top: -30px;
+}
+
+/* line 56, ../sass/screen.scss */
+header ul {
+  margin-left: 50px;
+  float: left;
+}
+
+/* line 61, ../sass/screen.scss */
+header ul li {
+  display: inline-block;
+  padding: 22px 15px;
+  font-size: 16px;
+}
+
+/* line 67, ../sass/screen.scss */
+header ul li:hover {
+  background-color: #48cbf3;
+}
+
+/* line 71, ../sass/screen.scss */
+header ul a {
+  text-decoration: none;
+  color: #475055;
+  font-family: "Roboto-Regular";
+}
+
+/* line 77, ../sass/screen.scss */
+header .icon_head {
+  height: 60px;
+  float: right;
+  display: inline-block;
+  border-right: 1px solid #dde2e4;
+  border-left: 1px solid #dde2e4;
+}
+
+/* line 85, ../sass/screen.scss */
+header .icon_head img {
+  margin-top: 22px;
+  margin-left: 25px;
+}
+
+/* line 90, ../sass/screen.scss */
+header .icon_head .lastimg {
+  margin-right: 25px;
+}
+
+/* line 94, ../sass/screen.scss */
+header .icon_head_login {
+  height: 60px;
+  float: right;
+  display: inline-block;
+  border-right: 1px solid #dde2e4;
+}
+
+/* line 101, ../sass/screen.scss */
+header .icon_head_login img {
+  margin-top: 22px;
+  margin-left: 25px;
+}
+
+/* line 106, ../sass/screen.scss */
+header .icon_head_login .lastimg {
+  margin-right: 25px;
+}
+
+/* line 110, ../sass/screen.scss */
+.slider {
+  display: block;
+  width: 1220px;
+  height: 570px;
+  margin: auto;
+  padding-top: 60px;
+  background: url(images/slide.png);
+  background-size: 100% 100%;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+/* line 123, ../sass/screen.scss */
+.slider h2 {
+  margin-top: 80px;
+  font-size: 46px;
+  margin-left: 100px;
+  font-family: "Roboto-Regular";
+}
+
+/* line 130, ../sass/screen.scss */
+.slider span {
+  display: inherit;
+  width: 360px;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+
+/* line 137, ../sass/screen.scss */
+.slider .more {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 15px 45px;
+  font-size: 16px;
+  margin-left: 100px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  font-family: "Roboto-Regular";
+}
+
+/* line 150, ../sass/screen.scss */
+#content_dot {
+  position: absolute;
+  bottom: 20px;
+  left: 570px;
+}
+
+/* line 156, ../sass/screen.scss */
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+/* line 165, ../sass/screen.scss */
+.check {
+  background-color: #fff;
+}
+
+/* line 169, ../sass/screen.scss */
+.arrow {
+  color: #585858;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  padding: 15px 10px;
+  top: 300px;
+}
+
+/* line 178, ../sass/screen.scss */
+.arrow:hover {
+  background-color: #fff;
+}
+
+/* line 182, ../sass/screen.scss */
+.left {
+  left: 0px;
+}
+
+/* line 186, ../sass/screen.scss */
+.right {
+  right: 0px;
+}
+
+/* line 190, ../sass/screen.scss */
+#creation {
+  width: 100%;
+  background: #d4d9da;
+  padding-bottom: 80px;
+}
+
+/* line 196, ../sass/screen.scss */
+#content-crea {
+  width: 980px;
+  margin: auto;
+}
+
+/* line 201, ../sass/screen.scss */
+#content-crea h2 {
+  text-align: center;
+  font-family: "Roboto-Regular";
+  font-size: 46px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 209, ../sass/screen.scss */
+.rea {
+  margin: 0px;
+  padding: 0px;
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  display: inline-block;
+  margin-top: 40px;
+  border-radius: 3px;
+  -moz-box-shadow: 0px 3px 1px 0px #b4b9ba;
+  -webkit-box-shadow: 0px 3px 1px 0px #b4b9ba;
+  -o-box-shadow: 0px 3px 1px 0px #b4b9ba;
+  box-shadow: 0px 3px 1px 0px #b4b9ba;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#b4b9ba, Direction=180, Strength=1);
+}
+
+/* line 225, ../sass/screen.scss */
+.marg-crea {
+  margin-right: 36px;
+}
+
+/* line 229, ../sass/screen.scss */
+.rea .content {
+  height: 190px;
+  width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 236, ../sass/screen.scss */
+.rea .content img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* line 241, ../sass/screen.scss */
+.rea .descri {
+  height: 60px;
+  width: 100%;
+}
+
+/* line 246, ../sass/screen.scss */
+.rea .descri h3 {
+  color: #00b7df;
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  padding: 10px 5px;
+}
+
+/* line 253, ../sass/screen.scss */
+.rea .descri span {
+  color: #434648;
+  font-size: 14px;
+  font-family: "Roboto-Regular";
+  padding-left: 10px;
+}
+
+/* line 260, ../sass/screen.scss */
+.button {
+  padding: 10px 20px;
+  background: red;
+  margin: auto;
+  width: 140px;
+  margin-top: 100px;
+  background-image: linear-gradient(#88c128, #a5d244);
+  color: #fff;
+  -moz-box-shadow: 0px -5px 5px 0px #b4b9ba;
+  -webkit-box-shadow: 0px -5px 5px 0px #b4b9ba;
+  -o-box-shadow: 0px -5px 5px 0px #b4b9ba;
+  box-shadow: 0px -5px 5px 0px #b4b9ba;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#b4b9ba, Direction=90, Strength=5);
+}
+
+/* line 276, ../sass/screen.scss */
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 282, ../sass/screen.scss */
+#about {
+  width: 100%;
+  background: #e4eaea;
+  padding-bottom: 75px;
+}
+
+/* line 288, ../sass/screen.scss */
+#about h2 {
+  padding-top: 50px;
+  font-size: 36px;
+  text-align: center;
+  font-family: "Roboto-Regular";
+}
+
+/* line 295, ../sass/screen.scss */
+#about h3 {
+  font-size: 27px;
+  text-align: center;
+  font-family: "Roboto-Regular";
+  width: 600px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* line 304, ../sass/screen.scss */
+#about img {
+  display: block;
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  margin-top: 58px;
+}
+
+/* line 312, ../sass/screen.scss */
+#about #end_about {
+  width: 840px;
+  margin: auto;
+}
+
+/* line 317, ../sass/screen.scss */
+#about #end_about .picture {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 50%;
+  background: url(http://lorempixel.com/300/300);
+  float: left;
+}
+
+/* line 326, ../sass/screen.scss */
+#about #end_about .text .title {
+  font-size: 40px;
+  color: #00add6;
+  font-family: "Roboto-Regular";
+  display: inline-block;
+}
+
+/* line 333, ../sass/screen.scss */
+#about #end_about .text {
+  width: 510px;
+  height: 300px;
+  float: left;
+  margin-left: 30px;
+}
+
+/* line 340, ../sass/screen.scss */
+#about #end_about .text .descri {
+  display: inline-block;
+  margin-top: 20px;
+  color: #434648;
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+}
+
+/* line 349, ../sass/screen.scss */
+#about #end_about .text .link {
+  font-size: 16px;
+  color: #99cc33;
+  margin-top: 20px;
+  display: inline-block;
+  font-family: "Roboto-Regular";
+}
+
+/* line 357, ../sass/screen.scss */
+#about #end_about .text a {
+  font-size: 16px;
+  color: #99cc33;
+  text-decoration: none;
+}
+
+/* line 363, ../sass/screen.scss */
+#footer {
+  background: #272a2b;
+  width: 100%;
+  padding-top: 60px;
+  border-bottom: 1px solid #232121;
+}
+
+/* line 370, ../sass/screen.scss */
+#footer .content {
+  width: 980px;
+  margin: auto;
+  color: #83878a;
+  font-size: 14px;
+  font-family: "Roboto-Regular";
+}
+
+/* line 378, ../sass/screen.scss */
+#footer .content p {
+  padding-bottom: 20px;
+}
+
+/* line 382, ../sass/screen.scss */
+#footer .content .last {
+  padding-bottom: 50px;
+}
+
+/* line 386, ../sass/screen.scss */
+#after_foot {
+  background: #272a2b;
+  width: 100%;
+  border-top: 1px solid #3d4041;
+  padding: 35px 0px;
+  text-align: center;
+}
+
+/* line 394, ../sass/screen.scss */
+#after_foot span {
+  font-size: 14px;
+  color: #83878a;
+}
+
+/* contact */
+/* line 408, ../sass/screen.scss */
+#head_contact {
+  width: 100%;
+  height: 379px;
+  padding-top: 60px;
+  background-image: url(../images/header.jpg);
+  background-size: 100%;
+}
+/* line 416, ../sass/screen.scss */
+#head_contact h1 {
+  font-familly: 'Georgia Bold Italic';
+  font-size: 136px;
+  color: #fff;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: bold;
+  font-style: italic;
+}
+/* line 426, ../sass/screen.scss */
+#head_contact #content_header {
+  width: 520px;
+  margin: auto;
+}
+/* line 431, ../sass/screen.scss */
+#head_contact #content_header span {
+  color: #fff;
+  font-family: "Roboto-Light";
+  font-size: 26px;
+}
+/* line 437, ../sass/screen.scss */
+#head_contact #content_header #info_1 {
+  float: left;
+  width: 155px;
+}
+/* line 442, ../sass/screen.scss */
+#head_contact #content_header #info_2 {
+  float: right;
+  width: 230px;
+  text-align: right;
+}
+/* line 448, ../sass/screen.scss */
+#head_contact #content_header #info_2 span {
+  font-size: 20px;
+}
+
+/* line 457, ../sass/screen.scss */
+#form {
+  width: 980px;
+  padding: 80px 0px;
+  margin: auto;
+}
+/* line 465, ../sass/screen.scss */
+#form form input[type=text], #form form textarea {
+  background: #fff;
+  color: #838789;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px;
+  width: 450px;
+  margin-bottom: 35px;
+  font-family: "Roboto-Italic";
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0px -2px 2px 0px #dadcda;
+  -webkit-box-shadow: 0px -2px 2px 0px #dadcda;
+  -o-box-shadow: 0px -2px 2px 0px #dadcda;
+  box-shadow: 0px -2px 2px 0px #dadcda;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#dadcda, Direction=90, Strength=2);
+}
+/* line 484, ../sass/screen.scss */
+#form form input[type=text]::placeholder {
+  color: #838789;
+}
+/* line 488, ../sass/screen.scss */
+#form form input[type=text]:nth-child(2) {
+  float: right;
+  margin-left: 35px;
+}
+/* line 493, ../sass/screen.scss */
+#form form input[type=text]:nth-child(3) {
+  width: 960px;
+}
+/* line 497, ../sass/screen.scss */
+#form form textarea {
+  min-width: 960px;
+  min-height: 235px;
+  max-width: 960px;
+  max-height: 235px;
+}
+/* line 504, ../sass/screen.scss */
+#form form input[type=file] {
+  background: #fff;
+  color: #838789;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 0px;
+  width: 545px;
+}
+/* line 514, ../sass/screen.scss */
+#form form #file_imp {
+  position: relative;
+  float: left;
+}
+/* line 519, ../sass/screen.scss */
+#form form #file_imp input[type=text] {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+/* line 528, ../sass/screen.scss */
+#form form #file_imp input[type=file] {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+}
+/* line 538, ../sass/screen.scss */
+#form form #file_imp span {
+  position: absolute;
+  top: 0px;
+  left: 470px;
+  padding: 15px;
+  background: #dddfde;
+  color: #c4c6c7;
+  margin: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+/* line 551, ../sass/screen.scss */
+#form form #button_form {
+  float: right;
+}
+/* line 555, ../sass/screen.scss */
+#form form #button_form input {
+  background-image: linear-gradient(#a6d345, #88c128);
+  border: 0;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+  border-radius: 3px;
+  -moz-box-shadow: 0px -3px 3px 0px #d7d9d8;
+  -webkit-box-shadow: 0px -3px 3px 0px #d7d9d8;
+  -o-box-shadow: 0px -3px 3px 0px #d7d9d8;
+  box-shadow: 0px -3px 3px 0px #d7d9d8;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#d7d9d8, Direction=90, Strength=3);
+  cursor: pointer;
+}
+/* line 571, ../sass/screen.scss */
+#form form #button_form span {
+  text-align: left;
+  color: #434648;
+  display: block;
+  font-size: 10px;
+  text-align: right;
+  margin-top: 20px;
+}

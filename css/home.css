@@ -337,18 +337,22 @@ a, a:link, a:focus, a:hover, a:visited {
   margin-top: 70px;
 }
 
-/* line 16, ../sass/home.scss */
+/* line 14, ../sass/home.scss */
+#folio {
+  padding-bottom: 50px;
+}
+/* line 17, ../sass/home.scss */
 #folio h1 {
   padding: 76px;
   font-family: 'RobotoLight', Arial, sans-serif;
   font-size: 46px;
   color: #272a2b;
 }
-/* line 21, ../sass/home.scss */
+/* line 22, ../sass/home.scss */
 #folio h1 strong {
   font-weight: bold;
 }
-/* line 25, ../sass/home.scss */
+/* line 26, ../sass/home.scss */
 #folio figure {
   position: relative;
   display: inline-block;
@@ -357,73 +361,96 @@ a, a:link, a:focus, a:hover, a:visited {
   border-radius: 3px;
   box-shadow: 0px 1px 1px 1px #B4B9BA;
 }
-/* line 32, ../sass/home.scss */
+/* line 33, ../sass/home.scss */
 #folio figure img {
   border-radius: 3px 3px 0px 0px;
 }
-/* line 35, ../sass/home.scss */
+/* line 36, ../sass/home.scss */
 #folio figure figcaption {
   padding: 3px;
   text-align: left;
 }
-/* line 38, ../sass/home.scss */
+/* line 39, ../sass/home.scss */
 #folio figure figcaption h2 {
   font-size: 18px;
   color: #00b7df;
 }
-/* line 42, ../sass/home.scss */
+/* line 43, ../sass/home.scss */
 #folio figure figcaption p {
   font-size: 14px;
   color: #434648;
 }
-/* line 48, ../sass/home.scss */
+/* line 49, ../sass/home.scss */
 #folio button {
-  padding: 3px;
+  margin: 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #99cc33;
+  font-size: 16px;
+  background: #a6d345;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a6d345 0%, #75b31e 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a6d345), color-stop(100%, #75b31e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a6d345 0%, #75b31e 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a6d345 0%, #75b31e 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a6d345 0%, #75b31e 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #a6d345 0%, #75b31e 100%);
+  /* W3C */
+  -moz-box-shadow: 0px -1px 5px 1px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 0px -1px 5px 1px rgba(50, 50, 50, 0.5);
+  box-shadow: 0px -1px 5px 1px rgba(50, 50, 50, 0.5);
   color: #fff;
 }
 
-/* line 57, ../sass/home.scss */
+/* line 67, ../sass/home.scss */
 #catchphrase {
   margin: 0 auto;
   padding: 50px 150px;
   background-color: #e4eaea;
   color: #272a2b;
 }
-/* line 62, ../sass/home.scss */
+/* line 72, ../sass/home.scss */
 #catchphrase h1 {
   font-size: 36px;
 }
-/* line 65, ../sass/home.scss */
+/* line 75, ../sass/home.scss */
 #catchphrase p {
   font-size: 27px;
 }
 
-/* line 70, ../sass/home.scss */
+/* line 80, ../sass/home.scss */
 #convince {
   padding: 50px 120px;
   text-align: left;
   background-color: #dde0e0;
 }
-/* line 74, ../sass/home.scss */
+/* line 84, ../sass/home.scss */
 #convince tr td, #convince img {
   vertical-align: top;
 }
-/* line 77, ../sass/home.scss */
+/* line 87, ../sass/home.scss */
 #convince img {
   border-radius: 50%;
 }
-/* line 80, ../sass/home.scss */
+/* line 90, ../sass/home.scss */
 #convince h1 {
-  padding: 10px;
+  padding: 30px;
   font-size: 50px;
   color: #00add6;
 }
-/* line 85, ../sass/home.scss */
+/* line 95, ../sass/home.scss */
 #convince p, #convince a {
-  padding: 10px;
+  padding: 10px 30px;
+  font-size: 14px;
+}
+/* line 99, ../sass/home.scss */
+#convince a, #convince a:link, #convince a:focus, #convince a:visited, #convince a:hover {
+  color: #a6d345;
 }
 
 /*# sourceMappingURL=home.css.map */

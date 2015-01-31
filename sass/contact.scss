@@ -32,24 +32,6 @@
 }
 
 form {
-    /*table {
-        width: 960px;
-        margin: 50px auto;
-        table-layout: fixed;
-        tr td {
-            padding: 5px;
-            text-align: center;
-            input, textarea {
-                width: 90%;
-                margin: 4px;
-                background-color: #fff;
-                //border: 2px inset #fff;
-                border: none;
-                @include border-radius(3px);
-                @include box-shadow(0px -1px 1px 1px #CCC);
-            }
-        }
-    //}*/
     width: 960px;
     margin: 50px auto;
     input, textarea {
@@ -72,6 +54,16 @@ form {
                 margin-right: 0px;
                 margin-left: 20px;
             }
+        }
+        &.green {
+            color: #fff;
+            background: #a6d345;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6d345), color-stop(100%,#75b31e));
+            background: -webkit-linear-gradient(top, #a6d345 0%,#75b31e 100%);
+            background: -moz-linear-gradient(top, #a6d345 0%, #75b31e 100%);
+            background: -ms-linear-gradient(top, #a6d345 0%,#75b31e 100%);
+            background: -o-linear-gradient(top, #a6d345 0%,#75b31e 100%);
+            background: linear-gradient(to bottom, #a6d345 0%,#75b31e 100%);
         }
     }
     textarea {

@@ -1,0 +1,88 @@
+@import "base";
+
+/*@import 'common';
+@import 'buttons';
+@import 'header';
+@import 'works';
+@import 'about';
+@import 'footer';*/
+
+.slideshow {
+    margin-top: 70px;
+}
+
+#folio
+{
+    h1 {
+        padding: 76px;
+        font-family: 'RobotoLight', Arial, sans-serif;
+        font-size: 46px;
+        color: #272a2b;
+        strong {
+            font-weight: bold;
+        }
+    }
+    figure {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+        border-radius: 3px;
+        box-shadow: 0px 1px 1px 1px #B4B9BA;
+        img {
+            border-radius: 3px 3px 0px 0px;
+        }
+        figcaption {
+            padding: 3px;
+            text-align: left;
+            h2 {
+                font-size: 18px;
+                color: #00b7df;
+            }
+            p {
+                font-size: 14px;
+                color: #434648;
+            }
+        }
+    }
+    button {
+        padding: 3px;
+        border: none;
+        border-radius: 5px;
+        background-color: #99cc33;
+        color: #fff;
+    }
+}
+
+#catchphrase {
+    margin: 0 auto;
+    padding: 50px 150px;
+    background-color: #e4eaea;
+    color: #272a2b;
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 27px;
+    }
+}
+
+#convince {
+    padding: 50px 120px;
+    text-align: left;
+    background-color: #dde0e0;
+    tr td, img {
+        vertical-align: top;
+    }
+    img {
+        border-radius: 50%;
+    }
+    h1 {
+        padding: 10px;
+        font-size: 50px;
+        color: #00add6;
+    }
+    p, a {
+        padding: 10px;
+    }
+}

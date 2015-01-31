@@ -1,0 +1,32 @@
+// some compass utils
+@import "compass/reset";
+@import "compass/css3";
+
+// fontface import
+@import "fontface";
+
+// header and footer are always visibles
+@import "header";
+@import "footer";
+
+$blueColor: #48cbf3;
+
+/**
+ * Common and base
+ */
+#wrap {
+    width: 1170px;
+    margin: 0 auto;
+    font-family: 'RobotoRegular', Arial, sans-serif;
+    text-align: center;
+    background-color: #f1f7f7;
+}
+
+img {
+    max-width: 100%;
+}
+
+a, a:link, a:focus, a:hover, a:visited
+{
+	text-decoration: none;
+}

@@ -1,0 +1,80 @@
+@import "base";
+
+#infos {
+    margin-top: 70px;
+    padding: 75px;
+    z-index: 3;
+    background-image: url('../img/contact_bg.png');
+    background-position: center;
+    @include background-size(cover);
+    color: #fff;
+    h1 {
+        font-family: "Georgia", sans-serif;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 136px;
+        letter-spacing: -5px;
+    }
+    div {
+        width: 50%;
+        font-family: "RobotoLight", sans-serif;
+        font-size: 16px;
+        &.address {
+            float: left;
+        }
+        &.numbers {
+            float: right;
+        }
+        &.clear {
+            clear: both;
+        }
+    }
+}
+
+form {
+    /*table {
+        width: 960px;
+        margin: 50px auto;
+        table-layout: fixed;
+        tr td {
+            padding: 5px;
+            text-align: center;
+            input, textarea {
+                width: 90%;
+                margin: 4px;
+                background-color: #fff;
+                //border: 2px inset #fff;
+                border: none;
+                @include border-radius(3px);
+                @include box-shadow(0px -1px 1px 1px #CCC);
+            }
+        }
+    //}*/
+    width: 960px;
+    margin: 50px auto;
+    input, textarea {
+        width: 950px;
+        height: 30px;
+        margin: 10px;
+        padding: 5px;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-style: italic;
+        background-color: #fff;
+        @include box-sizing(border-box);
+        border: none;
+        @include border-radius(3px);
+        @include box-shadow(0px -1px 1px 1px #CCC);
+        vertical-align: middle;
+        &.small {
+            width: 460px;
+            &.right {
+                margin-right: 0px;
+                margin-left: 20px;
+            }
+        }
+    }
+    textarea {
+        resize: none;
+    }
+}

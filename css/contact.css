@@ -1,0 +1,428 @@
+/* line 5, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../usr/share/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url("../fonts/roboto/roboto_regular_macroman/Roboto-Regular-webfont.eot");
+  src: url("../fonts/roboto/roboto_regular_macroman/Roboto-Regular-webfont.eot?iefix") format("eot"), url("../fonts/roboto/roboto_regular_macroman/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/roboto/roboto_regular_macroman/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto_regular_macroman/Roboto-Regular-webfont.svg#webfont") format("svg");
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url("../fonts/roboto/roboto_light_macroman/Roboto-Light-webfont.eot");
+  src: url("../fonts/roboto/roboto_light_macroman/Roboto-Light-webfont.eot?iefix") format("eot"), url("../fonts/roboto/roboto_light_macroman/Roboto-Light-webfont.woff") format("woff"), url("../fonts/roboto/roboto_light_macroman/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto_light_macroman/Roboto-Light-webfont.svg#webfont") format("svg");
+}
+/* line 3, ../sass/_header.scss */
+header {
+  position: fixed;
+  top: 0px;
+  width: 1170px;
+  height: 70px;
+  text-align: left;
+  background-color: #FFF;
+  z-index: 50;
+}
+/* line 11, ../sass/_header.scss */
+header h1 {
+  float: left;
+  width: 125px;
+  height: 75px;
+  margin-top: -50px;
+  padding-top: 50px;
+  border: 17px solid #58d2f0;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 26px;
+  background-color: #49dbff;
+  color: #000;
+}
+/* line 24, ../sass/_header.scss */
+header nav {
+  margin-left: 225px;
+  padding: 25px;
+  font-size: 16px;
+  color: #475055;
+}
+/* line 30, ../sass/_header.scss */
+header nav a, header nav a:link, header nav a:visited, header nav a:hover {
+  color: #333;
+  text-decoration: none;
+}
+/* line 34, ../sass/_header.scss */
+header .social {
+  float: right;
+  vertical-align: middle;
+}
+
+/*header
+{
+	background-color: #f3f5f3;
+	margin-bottom: -4px;
+
+	nav
+	{
+		position: fixed;
+		top:0;
+		left:0;
+		z-index:5;
+		width: 100%;
+		background: #fff;
+		height: 60px;
+
+		.content
+		{
+			position: relative;
+		}
+
+		.logo
+		{
+			position: absolute;
+			left: 0;
+			top:0;
+			z-index:1;
+		}
+
+		li, .social
+		{
+			line-height: 60px;
+		}
+
+		ul
+		{
+			margin-left: 200px;
+
+			// link nav
+			li
+			{
+				float: left;
+
+				a
+				{
+					display: inline-block;
+					padding: 0 20px;
+					color: #475055;
+					@include transition(background-color 0.2s ease);
+
+					&:hover
+					{
+						background-color: #48cbf3;
+					}
+				}
+			}
+		}
+
+
+		// social nav
+		.social
+		{
+			div
+			{
+				display: inline-block
+			}
+			a
+			{
+				padding: 0 20px;
+				color: #b2b9bd;
+				@include transition(color 0.3s ease);
+
+				&:hover
+				{
+					color: darken(#b2b9bd, 50%);
+				}
+			}
+
+			// social media
+			div:first-child
+			{
+				border-left: 1px solid $socialBorderColor;
+				border-right: 1px solid $socialBorderColor;
+
+				a:first-child
+				{
+					padding: 0 0 0 20px;
+				}
+				a:last-child
+				{
+					padding: 0 20px 0 0;
+				}
+			}
+
+			// user
+			div:last-child
+			{
+				border-right: 1px solid $socialBorderColor;
+			}
+		}
+	}
+
+	.slider
+	{
+		margin-top: 60px; // height nav in fixed
+		position: relative;
+		color: #fff;
+
+		// text bloc
+		.slidertext
+		{
+			position: absolute;
+			left: 95px;
+			top: 60px;
+			width: 350px;
+
+			p
+			{
+				margin-bottom: 40px;
+				line-height: 22px;
+			}
+		}
+
+		// list slider
+		.sliderList
+		{
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			@include transform(translateX(-50%));
+			cursor: pointer;
+
+			li
+			{
+				display: inline-block;
+				width: 10px;
+				height: 10px;
+				border: 1px solid #fff;
+				border-radius: 50%;
+
+				&.full
+				{
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}*/
+/* line 1, ../sass/_footer.scss */
+footer {
+  background-color: #272a2b;
+  color: #83878a;
+}
+/* line 4, ../sass/_footer.scss */
+footer p {
+  padding: 20px 50px;
+}
+/* line 6, ../sass/_footer.scss */
+footer p:first-child {
+  border-bottom: solid 1px #232121;
+}
+/* line 9, ../sass/_footer.scss */
+footer p:last-child {
+  border-top: solid 1px #3D4041;
+}
+
+/*.footer
+{
+	background-color: #272a2b;
+	padding-top: 60px;
+	color: #83878a;
+
+	.footerText
+	{
+		padding-bottom: 30px;
+		p
+		{
+			margin-bottom: 30px;
+			line-height: 20px;
+		}
+
+		border-bottom: 1px solid #232121;
+	}
+
+	.legals
+	{
+		border-top: 1px solid #3d4041;
+		line-height: 70px;
+	}
+}*/
+/**
+ * Common and base
+ */
+/* line 17, ../sass/_base.scss */
+#wrap {
+  width: 1170px;
+  margin: 0 auto;
+  font-family: 'RobotoRegular', Arial, sans-serif;
+  text-align: center;
+  background-color: #f1f7f7;
+}
+
+/* line 25, ../sass/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 29, ../sass/_base.scss */
+a, a:link, a:focus, a:hover, a:visited {
+  text-decoration: none;
+}
+
+/* line 3, ../sass/contact.scss */
+#infos {
+  margin-top: 70px;
+  padding: 75px;
+  z-index: 3;
+  background-image: url("../img/contact_bg.png");
+  background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+/* line 11, ../sass/contact.scss */
+#infos h1 {
+  font-family: "Georgia", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 136px;
+  letter-spacing: -5px;
+}
+/* line 18, ../sass/contact.scss */
+#infos div {
+  width: 50%;
+  font-family: "RobotoLight", sans-serif;
+  font-size: 16px;
+}
+/* line 22, ../sass/contact.scss */
+#infos div.address {
+  float: left;
+}
+/* line 25, ../sass/contact.scss */
+#infos div.numbers {
+  float: right;
+}
+/* line 28, ../sass/contact.scss */
+#infos div.clear {
+  clear: both;
+}
+
+/* line 34, ../sass/contact.scss */
+form {
+  /*table {
+      width: 960px;
+      margin: 50px auto;
+      table-layout: fixed;
+      tr td {
+          padding: 5px;
+          text-align: center;
+          input, textarea {
+              width: 90%;
+              margin: 4px;
+              background-color: #fff;
+              //border: 2px inset #fff;
+              border: none;
+              @include border-radius(3px);
+              @include box-shadow(0px -1px 1px 1px #CCC);
+          }
+      }
+  //}*/
+  width: 960px;
+  margin: 50px auto;
+}
+/* line 55, ../sass/contact.scss */
+form input, form textarea {
+  width: 950px;
+  height: 30px;
+  margin: 10px;
+  padding: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  background-color: #fff;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0px -1px 1px 1px #CCC;
+  -webkit-box-shadow: 0px -1px 1px 1px #CCC;
+  box-shadow: 0px -1px 1px 1px #CCC;
+  vertical-align: middle;
+}
+/* line 69, ../sass/contact.scss */
+form input.small, form textarea.small {
+  width: 460px;
+}
+/* line 71, ../sass/contact.scss */
+form input.small.right, form textarea.small.right {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+/* line 77, ../sass/contact.scss */
+form textarea {
+  resize: none;
+}
+
+/*# sourceMappingURL=contact.css.map */

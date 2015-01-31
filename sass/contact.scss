@@ -54,16 +54,22 @@ form {
                 margin-right: 0px;
                 margin-left: 20px;
             }
-        }
-        &.green {
-            color: #fff;
-            background: #a6d345;
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6d345), color-stop(100%,#75b31e));
-            background: -webkit-linear-gradient(top, #a6d345 0%,#75b31e 100%);
-            background: -moz-linear-gradient(top, #a6d345 0%, #75b31e 100%);
-            background: -ms-linear-gradient(top, #a6d345 0%,#75b31e 100%);
-            background: -o-linear-gradient(top, #a6d345 0%,#75b31e 100%);
-            background: linear-gradient(to bottom, #a6d345 0%,#75b31e 100%);
+            &.green {
+                width: 230px;
+                height: 40px;
+                margin-left: 250px;
+                font-size: 16px;
+                font-style: normal;
+                color: #fff;
+                border-radius: 2px;
+                background: #a6d345;
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a6d345), color-stop(100%,#75b31e));
+                background: -webkit-linear-gradient(top, #a6d345 0%,#75b31e 100%);
+                background: -moz-linear-gradient(top, #a6d345 0%, #75b31e 100%);
+                background: -ms-linear-gradient(top, #a6d345 0%,#75b31e 100%);
+                background: -o-linear-gradient(top, #a6d345 0%,#75b31e 100%);
+                background: linear-gradient(to bottom, #a6d345 0%,#75b31e 100%);
+            }
         }
     }
     textarea {

@@ -402,9 +402,15 @@ form input.small.right, form textarea.small.right {
   margin-right: 0px;
   margin-left: 20px;
 }
-/* line 58, ../sass/contact.scss */
-form input.green, form textarea.green {
+/* line 57, ../sass/contact.scss */
+form input.small.green, form textarea.small.green {
+  width: 230px;
+  height: 40px;
+  margin-left: 250px;
+  font-size: 16px;
+  font-style: normal;
   color: #fff;
+  border-radius: 2px;
   background: #a6d345;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a6d345), color-stop(100%, #75b31e));
   background: -webkit-linear-gradient(top, #a6d345 0%, #75b31e 100%);
@@ -413,7 +419,7 @@ form input.green, form textarea.green {
   background: -o-linear-gradient(top, #a6d345 0%, #75b31e 100%);
   background: linear-gradient(to bottom, #a6d345 0%, #75b31e 100%);
 }
-/* line 69, ../sass/contact.scss */
+/* line 75, ../sass/contact.scss */
 form textarea {
   resize: none;
 }

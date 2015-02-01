@@ -12,12 +12,33 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'robotoitalic';
+  src: url("../fonts/robotoItalic/Roboto-Italic-webfont.eot");
+  src: url("../fonts/robotoItalic/Roboto-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoItalic/Roboto-Italic-webfont.woff") format("woff"), url("../fonts/robotoItalic/Roboto-Italic-webfont.ttf") format("truetype"), url("../fonts/robotoItalic/Roboto-Italic-webfont.svg#robotoitalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'georgiaBold';
+  src: url("../fonts/georgiaBold/Georgia Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .roboto-regular {
-  font-family: 'robotoregular';
+  font-family: 'robotoregular', Arial, Serif;
 }
 
 .roboto-light {
-  font-family: 'robotolight';
+  font-family: 'robotolight', Arial, Serif;
+}
+
+.roboto-italic {
+  font-family: 'robotoitalic', Arial, Serif;
+}
+
+.georgia-bold {
+  font-family: 'georgiaBold', Arial, Serif;
 }
 
 .content, .content980 {
@@ -39,6 +60,14 @@
 
 .textCenter {
   text-align: center;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textRight {
+  text-align: right;
 }
 
 p {
@@ -73,6 +102,17 @@ h2 {
 
 h3 {
   font-size: 18px;
+}
+
+.centerBoth {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .button {
@@ -404,6 +444,132 @@ header .slider .sliderList li.full {
 .footer .legals {
   border-top: 1px solid #3d4041;
   line-height: 70px;
+}
+
+header .headerBackground {
+  height: 380px;
+  width: 100%;
+  background: url("../images/headerContactImg.jpg") top left no-repeat;
+  background-size: cover;
+  margin-top: 60px;
+  position: relative;
+}
+header .headerBackground .headerContactTextBloc {
+  color: #fff;
+  width: 680px;
+  margin: auto;
+}
+header .headerBackground .headerContactTextBloc h2 {
+  font-style: italic;
+  font-size: 136px;
+  padding-top: 0;
+}
+header .headerBackground .headerContactTextBloc .contactInfos {
+  width: 80%;
+  margin: auto;
+}
+header .headerBackground .headerContactTextBloc .contactInfos p {
+  font-size: 26px;
+  float: left;
+}
+header .headerBackground .headerContactTextBloc .contactInfos p:last-child {
+  float: right;
+}
+header .headerBackground .headerContactTextBloc .contactInfos p .prefix {
+  font-size: 20px;
+}
+
+.contactForm {
+  background-color: #f3f5f3;
+  padding: 80px 0;
+}
+.contactForm input, .contactForm textarea, .contactForm .textInputFile {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid #dadcda;
+  border-bottom: none;
+  line-height: 40px;
+  margin-bottom: 30px;
+  color: #838789;
+  background-color: #fbfcfb;
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder, .contactForm .textInputFile::-webkit-input-placeholder {
+  font-family: "robotoitalic", Arial, Serif;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder, .contactForm .textInputFile::-moz-placeholder {
+  font-family: "robotoitalic", Arial, Serif;
+}
+.contactForm input:-moz-placeholder, .contactForm textarea:-moz-placeholder, .contactForm .textInputFile:-moz-placeholder {
+  /* Older versions of Firefox */
+  font-family: "robotoitalic", Arial, Serif;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder, .contactForm .textInputFile:-ms-input-placeholder {
+  font-family: "robotoitalic", Arial, Serif;
+}
+.contactForm input:focus, .contactForm textarea:focus, .contactForm .textInputFile:focus {
+  outline: none;
+}
+.contactForm input.inputName, .contactForm input.inputEmail {
+  width: 470px;
+}
+.contactForm input.inputObject {
+  width: 100%;
+}
+.contactForm input[type="submit"] {
+  border: none;
+  padding: 5px 75px;
+  margin-bottom: 20px;
+}
+.contactForm textarea {
+  width: 100%;
+  height: 235px;
+  resize: none;
+}
+.contactForm .requiredText {
+  font-size: 10px;
+  clear: both;
+}
+.contactForm .fileInputStyle {
+  position: relative;
+  float: left;
+}
+.contactForm .fileInputStyle input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 365px;
+  width: 110px;
+  cursor: pointer;
+}
+.contactForm .fileInputStyle .textInputFile {
+  position: absolute;
+  width: 365px;
+  font-family: "robotoitalic", Arial, Serif;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+.contactForm .fileInputStyle .submitInputFile {
+  position: absolute;
+  left: 365px;
+  width: 110px;
+  background-color: #dddfde;
+  color: #838789;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  line-height: 35px;
+  border: 2px solid #dadcda;
+  border-left: none;
+  border-bottom: none;
+}
+.contactForm .fileInputStyle .submitInputFile:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */

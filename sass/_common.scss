@@ -11,6 +11,10 @@ $subTitleFigcationColor: #434648;
 $backgroundAboutColor: #e4eaea;
 // footer
 $backgroundFooterColor: #272a2b;
+// font
+$robotoRegular: 'robotoregular', Arial, Serif;
+$robotoLight: 'robotolight', Arial, Serif;
+$robotoItalic: 'robotoitalic', Arial, Serif;
 
 
 // FONTS
@@ -36,13 +40,40 @@ $backgroundFooterColor: #272a2b;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('../fonts/robotoItalic/Roboto-Italic-webfont.eot');
+    src: url('../fonts/robotoItalic/Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotoItalic/Roboto-Italic-webfont.woff') format('woff'),
+         url('../fonts/robotoItalic/Roboto-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/robotoItalic/Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'georgiaBold';
+    src: url('../fonts/georgiaBold/Georgia Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .roboto-regular
 {
-	font-family: 'robotoregular';
+	font-family: 'robotoregular', Arial, Serif;
 }
 .roboto-light
 {
-	font-family: 'robotolight';
+	font-family: 'robotolight', Arial, Serif;
+}
+.roboto-italic
+{
+	font-family: 'robotoitalic', Arial, Serif;
+}
+.georgia-bold
+{
+	font-family: 'georgiaBold', Arial, Serif;
 }
 
 // COMMON CLASS
@@ -71,6 +102,16 @@ $backgroundFooterColor: #272a2b;
 .textCenter
 {
 	text-align: center;
+}
+
+.textLeft
+{
+	text-align: left;
+}
+
+.textRight
+{
+	text-align: right;
 }
 
 p
@@ -111,4 +152,13 @@ h2
 h3
 {
 	font-size: 18px;
+}
+
+// center virtical & horizontal
+.centerBoth
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	@include transform(translate(-50%, -50%));
 }

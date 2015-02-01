@@ -1,0 +1,97 @@
+.about
+{
+	background-color: $backgroundAboutColor;
+	color: $blueColor;
+	overflow: auto;
+	padding-bottom: 80px;
+
+	// headband with shadow
+	.headband
+	{
+		padding: 50px 0;
+		position: relative;
+		margin-bottom: 77px;
+		color: #272a2b;
+
+		&:after
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -170px;
+			width: 100%;
+			height: 172px;
+			background: url('../images/shadowAbout.png') top center no-repeat;
+		}
+
+		h3
+		{
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		p
+		{
+			font-size: 27px;
+			width: 650px;
+			margin: auto;
+		}
+	}
+
+	// bloc : description with office image
+	.officeBloc
+	{
+
+		.contentOfficeImage
+		{
+			position:relative;
+			width: 300px;
+			height: 300px;
+			overflow:hidden;
+			border-radius: 50%;
+			margin-right: 37px;
+			@include box-sizing(border-box);
+			border: 5px solid $backgroundAboutColor;
+			-webkit-box-shadow: inset -1px 5px 15px 0px rgba(50, 50, 50, 0.6);
+			-moz-box-shadow:    inset -1px 5px 15px 0px rgba(50, 50, 50, 0.6);
+			box-shadow:         inset -1px 5px 15px 0px rgba(50, 50, 50, 0.6);
+			background: url('../images/officeImg.png') center center;
+			background-size: cover;
+		}
+
+		div
+		{
+			width: 515px;
+
+			h3
+			{
+				font-size: 50px;
+			}
+
+			p
+			{
+				font-size: 20px;
+				color: #434648;
+				margin: 20px 0;
+				line-height: 28px;
+			}
+
+			a
+			{
+				font-size: 16px;
+				color: #99cc33;
+				@include transition(color 0.3s ease);
+
+				&:hover
+				{
+					color: lighten(#99cc33, 18%);
+				}
+
+				span
+				{
+					vertical-align: middle;
+					font-size: 21px;
+				}
+			}
+		}
+	}
+}

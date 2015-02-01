@@ -2,9 +2,9 @@
 Intégrer la home learn en HMTL et CSS à partir d'une maquette PSD
 
 # Développeur
-Prénom Nom : ________ ________
+Prénom Nom : Kévin Rousseau
 
-Extimation de temps : ____ h
+Extimation de temps : 3h
 
 Temps réel passé : ____ h
 

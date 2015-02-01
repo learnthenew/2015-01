@@ -1,0 +1,24 @@
+.footer
+{
+	background-color: $backgroundFooterColor;
+	padding-top: 60px;
+	color: #83878a;
+
+	.footerText
+	{
+		padding-bottom: 30px;
+		p
+		{
+			margin-bottom: 30px;
+			line-height: 20px;
+		}
+
+		border-bottom: 1px solid #232121;
+	}
+
+	.legals
+	{
+		border-top: 1px solid #3d4041;
+		line-height: 70px;
+	}
+}
